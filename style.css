@@ -1,0 +1,36 @@
+.wordle-tooltip {
+  display: inline-flex;
+  align-items: center;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.wordle-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 13px;
+  width: max-content;
+  max-width: 260px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin-left: 6px;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  display: none;
+  z-index: 999;
+  line-height: 1.4;
+}
+
+.wordle-tooltip:hover .tooltip-text {
+  display: block;
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Wordle Dictionary",
+  "description": "Displays definitions of guessed words in NYT Wordle.",
+  "version": "1.2",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "64": "icons/icon64.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.nytimes.com/games/wordle/index.html"],
+      "js": ["ui.js", "content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": ["storage"]
+}
