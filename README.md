@@ -21,7 +21,7 @@ This extension lets me instantly see definitions while playing Wordle without ex
 
 1. Download or clone this repository:
    ```
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git clone https://github.com/zo-in/Wordle-Dictionary.git
    ```
 2. Open `chrome://extensions/` in Chrome
 3. Enable **Developer Mode**
